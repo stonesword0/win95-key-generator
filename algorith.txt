@@ -1,0 +1,21 @@
+Normal windows 95 key: 00000-OEM-0000000-12345
+
+00000-OEM-0000000-12345
+^^^
+First 3 numbers can be anything thru 001-366
+
+00000-OEM-0000000-12345
+   ^^
+The next two can be anything thru 95-03 (<< YEARS)
+
+00000-OEM-0000000-12345
+          ^
+The first didgit must be 0
+
+00000-OEM-0000000-12345
+           ^^^^^^
+The sum of the next didgits must be divisible by 7, Also, the last didgit of the selection cannot be 0 or greater then 8
+
+00000-OEM-0000000-12345
+                  ^^^^^
+Last numbers do not matter.
