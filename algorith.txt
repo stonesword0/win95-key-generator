@@ -20,4 +20,3 @@ The sum of the next didgits must be divisible by 7, Also, the last didgit of the
                   ^^^^^
 Last numbers do not matter.
 
-r % 366+1
