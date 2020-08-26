@@ -19,3 +19,5 @@ The sum of the next didgits must be divisible by 7, Also, the last didgit of the
 00000-OEM-0000000-12345
                   ^^^^^
 Last numbers do not matter.
+
+r % 366+1
