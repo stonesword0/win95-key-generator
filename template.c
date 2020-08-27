@@ -9,8 +9,9 @@ void usage() {
 
 
 int main() {
-
-    win95();
+    int temp1 = 7, temp2 = 13, temp3;
+    temp3 = temp2 % temp1;
+    printf("%d", temp3);
 
 
     return 0;
