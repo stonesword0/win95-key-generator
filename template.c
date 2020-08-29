@@ -15,7 +15,7 @@ int main() {
 }
 
 int win95(){
-    
+    srand(time(NULL));
     int chunk1 = (rand() % (365 - 100 +1)) + 365;
     int chunk2 = (rand() % (99 - 95 +1)) + 95;
     const char *chunk3 = "OEM";
