@@ -9,12 +9,18 @@ void usage() {
 
 
 int main() {
-    win95();
+    win95oem();
 
     return 0;
 }
 
-int win95(){
+int win95cdkey() {
+
+    
+
+}
+
+int win95oem(){
     srand(time(NULL));
     int chunk1 = (rand() % (365 - 100 +1)) + 365;
     int chunk2 = (rand() % (99 - 95 +1)) + 95;
