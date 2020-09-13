@@ -24,7 +24,7 @@ Normal Windows 95 CD Key: 000-000000
 
 000-0000000
 ^^^
-First 3 numbers do not matter. Although, they cannot be 333, 444, 555, 666, 777, 888, and 999.
+First 3 numbers do not matter. Although, they cannot be 333, 444, 555, 666, 777, 888, or 999.
 
 000-0000000
     ^^^^^^^

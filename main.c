@@ -1,15 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 int randomNumber(int upper, int lower);
 void usage() {
-    printf("ilsahduqidhkl\n");
+    printf("Usage:\n\n-h, --help, -help - Displays the help\n-o, -oem - Generates a Windows 95 OEM Key\n-cd, -cdkey - Generates a Windows 95 CD Key\n");
 }
 
 
 int main(int argc, char *argv[]) {
-    win95oem();
+    if(argc >= 3){
+        printf("Too many arguments. Try again.\n");
+        return 0;
+    }
 
+    if(strcasecmp(argv[1], "--help") == 0 || strcasecmp(argv[1], "-help") == 0 || strcasecmp(argv[1], "-h") == 0 ) {
+        usage();
+        return 0;
+    }
+    else if(strcasecmp(argv[1], "-o") == 0 || strcasecmp(argv[1], "-oem") == 0) {
+        win95oem();
+    }
+    else if(strcasecmp(argv[1], "-cd") == 0 || strcasecmp(argv[1], "-cdkey") == 0) {
+        win95cdkey();
+    }
+    else {
+    printf("Too few / incorrect arguments supplied. Please try again.\n");
+    }
     return 0;
 }
 
@@ -20,8 +37,8 @@ int win95cdkey() {
         chunk1 = 635;
     }
     int chunk2[7];
-    for(int i = 0; i <= 5; i++) {
-        chunk2[i] = 6;
+    for(int i = 0; i <= 7; i++) {
+        chunk2[i] = (rand() % (7 - 1 +1)) + 1;
     }
 
     while((chunk2[0] + chunk2[1] + chunk2[2] + chunk2[3] + chunk2[4] + chunk2[5] + chunk2[6]) % 7 !=  0) {
@@ -59,7 +76,7 @@ int win95oem(){
         for(int i = 0; i<= 5; i++) {
             chunk4[i] = (rand() % (9 - 1 +1)) + 1;
         }
-        /*chunk4[5] = (rand() % (7 - 1 +1)) + 1;*/
+        chunk4[5] = (rand() % (7 - 1 +1)) + 1;
         
     }
 
